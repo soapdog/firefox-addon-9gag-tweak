@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "9GAG Tweaks",
+  "description": "Remove a sidebar e os links pra compartilhar no twitter e FB. Adiciona botão pra compartilhar no telegram",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "9gag-tweaks@andregarzia.com"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.9gag.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+
+}
